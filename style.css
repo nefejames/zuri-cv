@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: #dfe1eb;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem 0;
+}
+
+section {
+  background: white;
+  margin-bottom: 2rem;
+  border: 1px solid #dfe1eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: calc(2rem + 0.8vw) calc(1rem + 0.8vw);
+  border-radius: 4px;
+}
+
+h1,
+h2 {
+  font-size: calc(1.2rem + 0.2vw);
+  margin-bottom: 0.2rem;
+}
+
+li,
+p {
+  font-size: calc(0.8rem + 0.2vw);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+section.details li {
+  text-align: left;
+}
+
+li {
+  margin-bottom: calc(0.4rem + 0.1vw);
+  list-style-position: inside;
+}
+
+/* DETAILS */
+.details li {
+  list-style: none;
+}
+
+/* EDUCATION */
+.education div {
+  margin-bottom: calc(1rem + 0.1vw);
+}
+
+h3 {
+  font-size: calc(0.8rem + 0.2vw);
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 468px) {
+  h3 {
+    flex-direction: column;
+  }
+}
+
+/* EXPERIENCE */
+.job {
+  margin-bottom: calc(1.5rem + 0.2vw);
+}
+
+.job-details {
+  margin-bottom: calc(0.5rem + 0.1vw);
+}
+
+/* CERTS */
+.certs li {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
